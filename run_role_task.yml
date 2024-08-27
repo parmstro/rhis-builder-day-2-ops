@@ -4,8 +4,6 @@
   hosts: all
   become: true
   gather_facts: true
-  vars_files:
-    - "~/rhisbuilder_vault.yml"
 
   tasks:
 
