@@ -3,3 +3,4 @@ collections:
     version: ">=7.0"
   - name: ansible.posix
   - name: redhat.satellite
+  - name: infra.ah_configuration
