@@ -1,6 +1,6 @@
 ---
-- name: "Test Task"
-  hosts: automation_hubs
+- name: "Run Task"
+  hosts: all
   become: true
   gather_facts: true
   vars_files:
@@ -8,5 +8,5 @@
 
   tasks:
 
-    - name: "Test the specified task"
+    - name: "Run task - {{ task_name }}"
       ansible.builtin.include_tasks: tasks/{{ test_task_name }}.yml

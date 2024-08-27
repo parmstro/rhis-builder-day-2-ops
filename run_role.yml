@@ -1,6 +1,6 @@
 ---
 - name: "Run Role"
-  hosts: automation_hubs
+  hosts: all
   become: true
   gather_facts: true
 
