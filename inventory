@@ -1,0 +1,8 @@
+[build_control]
+localhost
+
+[automation_hubs]
+ah.parmstrong.ca
+
+[satellite_primary]
+sat6.parmstrong.ca

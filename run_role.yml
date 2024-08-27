@@ -1,0 +1,14 @@
+---
+- name: "Run Role"
+  hosts: automation_hubs
+  become: true
+  gather_facts: true
+
+  vars_files:
+    - "~/rhisbuilder_vault.yml"
+
+  tasks:
+
+    - name: "Apply role {{ role_name }}"
+      ansible.builtin.include_role:
+        name: "{{ role_name }}"

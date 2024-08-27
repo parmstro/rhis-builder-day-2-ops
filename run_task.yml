@@ -1,0 +1,12 @@
+---
+- name: "Test Task"
+  hosts: automation_hubs
+  become: true
+  gather_facts: true
+  vars_files:
+    - "~/rhisbuilder_vault.yml"
+
+  tasks:
+
+    - name: "Test the specified task"
+      ansible.builtin.include_tasks: tasks/{{ test_task_name }}.yml
