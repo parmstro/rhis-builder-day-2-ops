@@ -6,3 +6,7 @@ ah.parmstrong.ca
 
 [satellite_primary]
 sat6.parmstrong.ca
+
+[auth_debug_targets]
+ad-auth-tests.parmstrong.ca
+# idm5.parmstrong.ca
