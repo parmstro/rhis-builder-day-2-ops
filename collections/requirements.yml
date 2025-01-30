@@ -5,7 +5,7 @@ collections:
   - name: redhat.satellite
   - name: infra.ah_configuration
   - name: infra.leapp
-  - name: infra.lvm_snapshot
+  - name: infra.lvm_snapshots
   - name: infra.convert2rhel
   - name: infra.eda_configuration
   - name: infra.ee_utilities
