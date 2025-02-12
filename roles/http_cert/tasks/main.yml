@@ -100,8 +100,3 @@
     - name: "Ensure that certmonger starts-tracking the new certificate for autorenewals" # noqa: command-instead-of-shell no-changed-when risky-shell-pipe ignore-errors
       ansible.builtin.shell: "echo '{{ ipa_password }}' | kinit {{ ipa_principal }};ipa-getcert start-tracking -k {{ ssl_private_key_path }} -f {{ ssl_crt_path }} -I {{ service_owner_nickname }}"
       no_log: true
-
-    # This deprecated in the latest cockpit deployments
-    - name: "Create bundle of key and cert"  # noqa: command-instead-of-shell no-changed-when risky-shell-pipe ignore-errors
-      when: ansible_facts['distribution_major_version'] == "7"
-      ansible.builtin.shell: "cat {{ ssl_crt_path }} > {{ crt_key_bundle_path }}; cat {{ ssl_private_key_path }} >> {{ crt_key_bundle_path }};"
