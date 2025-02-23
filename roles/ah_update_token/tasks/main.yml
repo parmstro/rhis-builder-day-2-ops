@@ -5,4 +5,3 @@
     cmd: 'curl https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/token -d grant_type=refresh_token -d client_id="cloud-services" -d refresh_token="{{ refresh_token }}" --fail --silent --show-error --output /dev/null' # noqa yaml[line-length]
   register: token_refresh_result
   changed_when: token_refresh_result.rc == 0
-
