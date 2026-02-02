@@ -6,13 +6,13 @@ debug_output: false
 sat_organization: "Default Organization"
 sat_location: "Default Location"
 sat_validate_certs: true
-sat_server_url: "https://sat6.parmstrong.ca"
+sat_server_url: "satellite1.parmstrong.ca"
 sat_username: "{{ satellite_admin_username_vault }}"
 sat_password: "{{ satellite_admin_password_vault }}"
 
 # IdM certificate config vars
 ipa_domain: parmstrong.ca
-ipa_server_fqdn: idm5.parmstrong.ca
+ipa_server_fqdn: idm1.parmstrong.ca
 ipa_realm: PARMSTRONG.CA
 ipa_principal: "{{ ipa_principal_vault }}"
 ipa_password: "{{ ipa_password_vault }}"
