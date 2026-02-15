@@ -5,6 +5,7 @@ sysmessage_allowable_types:
   - "custom"
   - "default_compliance"
   - "cis2"
+  - "extended_cis2"
   - "disa_stig"
 
 sysmessage_default_type: "base"
