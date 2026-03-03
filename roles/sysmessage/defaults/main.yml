@@ -13,7 +13,7 @@ sysmessage_default_type: "base"
 sysmessage_default_base_message: |
   All activities performed on this device are logged and monitored.
 
-sysmessage_base_cis2_message: |
+sysmessage_default_cis2_message: |
   Authorized users only. All activity may be monitored and reported.
 
 sysmessage_extended_cis2_message: |
