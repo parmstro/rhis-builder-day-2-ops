@@ -1,6 +1,8 @@
 # variables for all hosts
 
-debug_output: false
+# AUDIT 2026-05-26: debug_output is confirmed dead — debugging code was removed.
+# Commented out pending test confirmation. Delete if tests pass without it.
+# debug_output: false
 
 # Satellite vars
 sat_organization: "Default Organization"
@@ -24,16 +26,18 @@ ssl_private_key_path: "{{ crt_dir }}/{{ ansible_fqdn }}.key"
 ssl_private_key_passphrase: "{{ ssl_private_key_passphrase_vault }}"
 ssl_private_key_cipher: des3
 ssl_private_key_size: 2048
-ssl_public_key_path: "{{ crt_dir }}/{{ ansible_fqdn }}.pub"
-ssl_public_key_format: PEM
+# AUDIT 2026-05-26: No task references found for the variables below.
+# Commented out pending test confirmation. Delete if tests pass without them.
+# ssl_public_key_path: "{{ crt_dir }}/{{ ansible_fqdn }}.pub"
+# ssl_public_key_format: PEM
 csr_path: "{{ crt_dir }}/{{ ansible_fqdn }}.csr"
-csr_email_address: "parmstro@parmstrong.ca"
+# csr_email_address: "parmstro@parmstrong.ca"
 csr_organization_name: "Paul Armstrong"
 csr_organization_unit_name: "Red Lab"
 csr_country_name: "CA"
 csr_state_or_province_name: "ON"
 csr_locality_name: "Cambridge"
-csr_digest: "aes256"
+# csr_digest: "aes256"
 crt_service_type: "HTTP"
 ssl_crt_path: "{{ crt_dir }}/{{ ansible_fqdn }}.crt"
 create_crt_key_bundle: false
