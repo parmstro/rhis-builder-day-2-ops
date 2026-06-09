@@ -1,2 +1,4 @@
 *vault*.yml
 *.vscode/*
+.vscode/
+.claude/
