@@ -6,7 +6,6 @@
     allow_downgrade: "{{ rhel_package.allow_downgrade | default(false) }}"
     allowerasing: "{{ rhel_package.allow_erasing | default(false) }}"
     autoremove: "{{ rhel_package.autoremove | default(false) }}"
-    best: "{{ rhel_package.best | default(false) }}"
     bugfix: "{{ rhel_package.bugfix | default(false) }}"
     cacheonly: "{{ rhel_package.cacheonly | default(false) }}"
     conf_file: "{{ rhel_package.conf_file | default('/etc/dnf/dnf.conf') }}"
