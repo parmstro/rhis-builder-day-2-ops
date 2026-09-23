@@ -5,7 +5,7 @@
   ansible.builtin.service_facts:
 
 - name: "Display services for debug"
-  when: debug_output
+  when: debug_output | default(false)
   ansible.builtin.debug:
     var: ansible_facts.services
 
