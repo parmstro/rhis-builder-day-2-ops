@@ -3,7 +3,7 @@
 
 time_timedaemon: "chrony"
 time_timeservers:
-  - "time.parmstrong.ca"
-  - "time2.parmstrong.ca"
-  - "time3.parmstrong.ca"
+  - "192.168.252.7"
+  - "192.168.252.8"
+  - "192.168.252.9"
 time_timezone: "America/Toronto"
