@@ -7,7 +7,7 @@
     option: default_shell
     value: /bin/bash
     mode: '0600'
-    user: "root"
+    owner: "root"
     group: "root"
   notify:
     - "Restart SSSD"
