@@ -16,3 +16,4 @@
     - cockpit # sysmessage puts a file in cockpit dir.
     - sysmessage
     - cockpit_cert
+    - sssd_default_shell

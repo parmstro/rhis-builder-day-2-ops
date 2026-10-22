@@ -1,0 +1,14 @@
+---
+
+- name: Ensure default_shell is configured under [nss] using ini_file
+  ansible.builtin.ini_file:
+    path: /etc/sssd/sssd.conf
+    section: nss
+    option: default_shell
+    value: /bin/bash
+    mode: '0600'
+    user: "root"
+    group: "root"
+  notify:
+    - "Restart SSSD"
+
